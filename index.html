@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>2027학년도 계약학과 신·편입생 모집 안내 | 인천대학교</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+<style>
+:root{
+  --navy:#0B2D59;
+  --yellow:#F5B417;
+  --ink:#1f2937;
+  --muted:#1a1a1a;
+  --line:#d9dee7;
+  --line-soft:#e8ecf2;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Pretendard',sans-serif;background:#fff;color:var(--ink);word-break:keep-all;line-height:1.7;}
+a{text-decoration:none;color:inherit;}
+table{border-collapse:collapse;width:100%;}
+
+/* ===== HEADER ===== */
+header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:100;}
+.hd-inner{max-width:1080px;margin:0 auto;padding:0 20px;height:64px;display:flex;align-items:center;justify-content:space-between;}
+.hd-brand{display:flex;align-items:center;gap:12px;}
+.hd-brand img{height:30px;display:block;}
+.hd-brand .t{font-size:.95rem;font-weight:700;color:var(--navy);}
+.hd-brand .s{font-size:.72rem;color:var(--muted);display:block;line-height:1.3;}
+.hd-cta{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:700;color:#fff;background:var(--navy);border:1px solid var(--navy);border-radius:4px;padding:9px 16px;white-space:nowrap;transition:background .15s;}
+.hd-cta:hover{background:#0d3468;}
+.hd-cta::after{content:'↗';font-weight:400;color:var(--yellow);}
+@media(max-width:720px){.hd-cta{display:none;}}
+.hd-switch{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:700;color:var(--navy);background:#fff;border:1px solid var(--navy);border-radius:4px;padding:9px 16px;white-space:nowrap;transition:background .15s,color .15s;}
+.hd-switch:hover{background:var(--navy);color:#fff;}
+@media(max-width:560px){.hd-switch span{display:none;}}
+
+/* ===== NAV (page tabs) ===== */
+nav{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:64px;z-index:99;overflow-x:auto;white-space:nowrap;}
+nav::-webkit-scrollbar{height:0;}
+.nav-inner{max-width:1080px;margin:0 auto;padding:0 12px;}
+.tab{display:inline-block;padding:13px 14px;font-size:.87rem;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;cursor:pointer;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit;}
+.tab:hover{color:var(--navy);}
+.tab.active{color:var(--navy);border-bottom-color:var(--yellow);}
+
+/* ===== LAYOUT (one-page) ===== */
+.page{display:block;scroll-margin-top:120px;}
+.page + .page{border-top:1px solid var(--line-soft);}
+.wrap{max-width:1080px;margin:0 auto;padding:56px 20px 20px;}
+.page-title{font-size:1.6rem;font-weight:800;color:var(--navy);margin-bottom:6px;}
+.page-desc{font-size:.92rem;color:var(--muted);margin-bottom:36px;}
+h2.sec{font-size:1.12rem;font-weight:800;color:var(--navy);margin:44px 0 16px;padding-left:12px;border-left:4px solid var(--yellow);line-height:1.4;}
+h2.sec:first-of-type{margin-top:0;}
+p.body{font-size:.92rem;margin-bottom:10px;}
+.note{font-size:.8rem;color:var(--muted);margin-top:10px;}
+.note li{margin-left:18px;}
+
+/* ===== COMPONENTS ===== */
+.grid2{display:grid;gap:16px;}
+@media(min-width:760px){.grid2{grid-template-columns:1fr 1fr;}}
+.grid3{display:grid;gap:16px;}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr);}}
+
+.box{border:1px solid var(--line);border-radius:4px;padding:20px 22px;background:#fff;}
+.box h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.box h3 .badge{display:inline-block;font-size:.7rem;font-weight:700;color:var(--navy);border:1px solid var(--yellow);background:#fff;padding:1px 8px;border-radius:2px;margin-left:8px;vertical-align:2px;}
+.box ul{list-style:none;}
+.box ul li{font-size:.87rem;padding:5px 0 5px 14px;position:relative;}
+.box ul li::before{content:'';position:absolute;left:0;top:14px;width:5px;height:5px;background:var(--navy);}
+
+.numlist{list-style:none;counter-reset:n;}
+.numlist>li{counter-increment:n;position:relative;padding:14px 0 14px 46px;border-bottom:1px solid var(--line-soft);font-size:.9rem;}
+.numlist>li:last-child{border-bottom:none;}
+.numlist>li::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:14px;font-size:.95rem;font-weight:800;color:var(--yellow);}
+.numlist .tt{font-weight:700;color:var(--navy);display:block;}
+.numlist .dd{font-size:.85rem;color:var(--muted);}
+
+/* ===== 제도 개요 강조 ===== */
+.def-box{border:1px solid var(--line);border-radius:4px;padding:24px 26px;height:100%;}
+.def-box .tag{font-size:.72rem;font-weight:700;color:var(--navy);letter-spacing:.06em;display:inline-block;border-bottom:2px solid var(--yellow);padding-bottom:3px;margin-bottom:12px;}
+.def-box p{font-size:.9rem;line-height:1.75;}
+
+.hero{border:1px solid var(--navy);background:var(--navy);border-radius:4px;padding:30px 32px;color:#fff;}
+.hero .lead{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--yellow);margin-bottom:12px;}
+.hero h3{font-size:1.42rem;font-weight:800;line-height:1.45;margin-bottom:14px;}
+.hero h3 em{font-style:normal;color:var(--yellow);}
+.hero p{font-size:.92rem;line-height:1.75;color:#d7e0ee;max-width:760px;}
+
+.derive{display:grid;gap:14px;margin-top:14px;}
+@media(min-width:760px){.derive{grid-template-columns:repeat(3,1fr);}}
+.derive .arrow{text-align:center;color:var(--muted);font-size:.78rem;margin:14px 0 2px;}
+.dcard{border:1px solid var(--line);border-radius:4px;padding:22px 22px 24px;position:relative;}
+.dcard .no{font-size:.9rem;font-weight:800;color:var(--yellow);}
+.dcard h4{font-size:1.02rem;font-weight:800;color:var(--navy);margin:6px 0 12px;line-height:1.4;}
+.dcard p{font-size:.86rem;line-height:1.7;color:var(--ink);}
+.dcard.feature{border:2px solid var(--navy);}
+.dcard.feature .flag{position:absolute;top:-1px;right:-1px;background:var(--navy);color:#fff;font-size:.68rem;font-weight:700;padding:4px 10px;border-radius:0 3px 0 4px;}
+.dcard ul{list-style:none;margin-top:10px;}
+.dcard ul li{font-size:.84rem;padding:5px 0 5px 14px;position:relative;line-height:1.6;}
+.dcard ul li::before{content:'';position:absolute;left:0;top:12px;width:5px;height:5px;background:var(--navy);}
+
+th,td{border:1px solid var(--line);padding:10px 12px;font-size:.86rem;text-align:center;}
+th{background:var(--navy);color:#fff;font-weight:700;}
+td.l{text-align:left;}
+td.strong{color:var(--navy);font-weight:700;}
+tr.hl td{background:#f7f9fc;font-weight:700;color:var(--navy);}
+.th-row td:first-child{background:#f7f9fc;font-weight:700;color:var(--navy);}
+
+/* 비교표 강조 열 (현장실습학기제) */
+.cmp{position:relative;border-collapse:separate;border-spacing:0;}
+.cmp th,.cmp td{border:1px solid var(--line);}
+.cmp th.feat{background:#08213f;}
+.cmp td.feat{background:#f2f6fc;color:var(--navy);font-weight:700;border-left:2px solid var(--navy);border-right:2px solid var(--navy);}
+.cmp tr:first-child th.feat{border-top:2px solid var(--navy);}
+.cmp tr:last-child td.feat{border-bottom:2px solid var(--navy);}
+
+.callout{border:1px solid var(--line);border-left:4px solid var(--yellow);border-radius:0 4px 4px 0;padding:14px 18px;font-size:.87rem;margin-top:18px;}
+.callout b{color:var(--navy);}
+.callout.red{border-left-color:#b03a2e;}
+.callout.red b{color:#b03a2e;}
+
+.kv{display:grid;grid-template-columns:150px 1fr;border:1px solid var(--line);border-radius:4px;overflow:hidden;}
+.kv>div{padding:11px 16px;font-size:.87rem;border-bottom:1px solid var(--line-soft);}
+.kv>div:nth-last-child(-n+2){border-bottom:none;}
+.kv .k{background:#f7f9fc;font-weight:700;color:var(--navy);}
+
+.formula{border:1px solid var(--navy);border-radius:4px;padding:18px 22px;background:var(--navy);color:#fff;font-size:.95rem;}
+.formula .lb{color:var(--yellow);font-weight:700;font-size:.8rem;letter-spacing:.08em;display:block;margin-bottom:6px;}
+.formula small{display:block;color:#b9c6da;font-size:.78rem;margin-top:6px;}
+
+/* ===== SEMESTER PAGES ===== */
+.sem-card{border:1px solid var(--line);border-radius:4px;padding:26px 26px 30px;margin-bottom:24px;}
+.sem-card h3{font-size:1.15rem;font-weight:800;color:var(--navy);margin-bottom:18px;}
+.sem-info{display:grid;gap:12px;margin-bottom:22px;}
+@media(min-width:640px){.sem-info{grid-template-columns:repeat(3,1fr);}}
+.sem-info .cell{border:1px solid var(--line-soft);border-radius:4px;padding:12px 16px;}
+.sem-info .cell .k{font-size:.75rem;color:var(--muted);display:block;}
+.sem-info .cell .v{font-size:1.02rem;font-weight:700;color:var(--navy);}
+.months{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;}
+.months .m{border:1px solid var(--line);border-radius:2px;text-align:center;font-size:.8rem;padding:9px 0;color:var(--muted);}
+.months .m.on{background:var(--navy);border-color:var(--navy);color:#fff;font-weight:700;}
+.months .m.recruit{border:2px solid var(--yellow);color:var(--navy);font-weight:700;}
+.legend{font-size:.78rem;color:var(--muted);margin-top:14px;}
+.legend .sq{display:inline-block;width:11px;height:11px;vertical-align:-1px;margin:0 5px 0 14px;border-radius:2px;}
+.legend .sq.navy{background:var(--navy);}
+.legend .sq.gold{border:2px solid var(--yellow);}
+
+/* ===== MAJORS ===== */
+.college{margin-bottom:28px;}
+.college h3{font-size:.98rem;font-weight:800;color:#fff;background:var(--navy);padding:9px 16px;border-radius:4px 4px 0 0;}
+.college table{border-top:none;}
+.college td:first-child{width:230px;font-weight:700;color:var(--navy);background:#f7f9fc;}
+
+/* ===== CONTACT ===== */
+.contact-grid{display:grid;gap:16px;margin-top:8px;}
+@media(min-width:760px){.contact-grid{grid-template-columns:repeat(4,1fr);}}
+.contact-grid .cell{border:1px solid var(--line);border-radius:4px;padding:18px;text-align:center;}
+.contact-grid .k{font-size:.78rem;color:var(--muted);display:block;margin-bottom:4px;}
+.contact-grid .v{font-size:.98rem;font-weight:700;color:var(--navy);}
+
+footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;font-size:.78rem;color:var(--muted);}
+
+/* ===== BACK TO TOP ===== */
+#toTop{position:fixed;right:24px;bottom:24px;width:46px;height:46px;border-radius:4px;background:var(--navy);color:#fff;border:none;cursor:pointer;font-size:1.2rem;line-height:1;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;z-index:200;box-shadow:0 2px 8px rgba(11,45,89,.25);}
+#toTop.show{opacity:1;visibility:visible;}
+#toTop:hover{background:#0d3468;}
+#toTop::after{content:'↑';font-weight:700;}
+
+/* ===== MAJORS TOGGLE ===== */
+#majors{margin-top:16px;}
+
+@media print{nav,header,#toTop{position:static;} }
+
+:root{
+  --navy:#0B2D59;
+  --yellow:#F5B417;
+  --ink:#1f2937;
+  --muted:#1a1a1a;
+  --line:#d9dee7;
+  --line-soft:#e8ecf2;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Pretendard',sans-serif;background:#fff;color:var(--ink);word-break:keep-all;line-height:1.7;}
+a{text-decoration:none;color:inherit;}
+table{border-collapse:collapse;width:100%;}
+
+/* ===== HEADER ===== */
+header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:100;}
+.hd-inner{max-width:1080px;margin:0 auto;padding:0 20px;height:64px;display:flex;align-items:center;justify-content:space-between;}
+.hd-brand{display:flex;align-items:center;gap:12px;}
+.hd-brand img{height:30px;display:block;}
+.hd-brand .t{font-size:.95rem;font-weight:700;color:var(--navy);}
+.hd-brand .s{font-size:.72rem;color:var(--muted);display:block;line-height:1.3;}
+.hd-cta{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:700;color:#fff;background:var(--navy);border:1px solid var(--navy);border-radius:4px;padding:9px 16px;white-space:nowrap;transition:background .15s;}
+.hd-cta:hover{background:#0d3468;}
+.hd-cta::after{content:'↗';font-weight:400;color:var(--yellow);}
+@media(max-width:720px){.hd-cta{display:none;}}
+.hd-switch{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:700;color:var(--navy);background:#fff;border:1px solid var(--navy);border-radius:4px;padding:9px 16px;white-space:nowrap;transition:background .15s,color .15s;}
+.hd-switch:hover{background:var(--navy);color:#fff;}
+@media(max-width:560px){.hd-switch span{display:none;}}
+
+/* ===== NAV (page tabs) ===== */
+nav{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:64px;z-index:99;overflow-x:auto;white-space:nowrap;}
+nav::-webkit-scrollbar{height:0;}
+.nav-inner{max-width:1080px;margin:0 auto;padding:0 12px;}
+.tab{display:inline-block;padding:13px 14px;font-size:.87rem;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;cursor:pointer;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit;}
+.tab:hover{color:var(--navy);}
+.tab.active{color:var(--navy);border-bottom-color:var(--yellow);}
+
+/* ===== LAYOUT (one-page) ===== */
+.page{display:block;scroll-margin-top:120px;}
+.page + .page{border-top:1px solid var(--line-soft);}
+.wrap{max-width:1080px;margin:0 auto;padding:56px 20px 20px;}
+.page-title{font-size:1.6rem;font-weight:800;color:var(--navy);margin-bottom:6px;}
+.page-desc{font-size:.92rem;color:var(--muted);margin-bottom:36px;}
+h2.sec{font-size:1.12rem;font-weight:800;color:var(--navy);margin:44px 0 16px;padding-left:12px;border-left:4px solid var(--yellow);line-height:1.4;}
+h2.sec:first-of-type{margin-top:0;}
+p.body{font-size:.92rem;margin-bottom:10px;}
+.note{font-size:.8rem;color:var(--muted);margin-top:10px;}
+.note li{margin-left:18px;}
+
+/* ===== COMPONENTS ===== */
+.grid2{display:grid;gap:16px;}
+@media(min-width:760px){.grid2{grid-template-columns:1fr 1fr;}}
+.grid3{display:grid;gap:16px;}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr);}}
+
+.box{border:1px solid var(--line);border-radius:4px;padding:20px 22px;background:#fff;}
+.box h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.box h3 .badge{display:inline-block;font-size:.7rem;font-weight:700;color:var(--navy);border:1px solid var(--yellow);background:#fff;padding:1px 8px;border-radius:2px;margin-left:8px;vertical-align:2px;}
+.box ul{list-style:none;}
+.box ul li{font-size:.87rem;padding:5px 0 5px 14px;position:relative;}
+.box ul li::before{content:'';position:absolute;left:0;top:14px;width:5px;height:5px;background:var(--navy);}
+
+.numlist{list-style:none;counter-reset:n;}
+.numlist>li{counter-increment:n;position:relative;padding:14px 0 14px 46px;border-bottom:1px solid var(--line-soft);font-size:.9rem;}
+.numlist>li:last-child{border-bottom:none;}
+.numlist>li::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:14px;font-size:.95rem;font-weight:800;color:var(--yellow);}
+.numlist .tt{font-weight:700;color:var(--navy);display:block;}
+.numlist .dd{font-size:.85rem;color:var(--muted);}
+
+/* ===== 제도 개요 강조 ===== */
+.def-box{border:1px solid var(--line);border-radius:4px;padding:24px 26px;height:100%;}
+.def-box .tag{font-size:.72rem;font-weight:700;color:var(--navy);letter-spacing:.06em;display:inline-block;border-bottom:2px solid var(--yellow);padding-bottom:3px;margin-bottom:12px;}
+.def-box p{font-size:.9rem;line-height:1.75;}
+
+.hero{border:1px solid var(--navy);background:var(--navy);border-radius:4px;padding:30px 32px;color:#fff;}
+.hero .lead{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--yellow);margin-bottom:12px;}
+.hero h3{font-size:1.42rem;font-weight:800;line-height:1.45;margin-bottom:14px;}
+.hero h3 em{font-style:normal;color:var(--yellow);}
+.hero p{font-size:.92rem;line-height:1.75;color:#d7e0ee;max-width:760px;}
+
+.derive{display:grid;gap:14px;margin-top:14px;}
+@media(min-width:760px){.derive{grid-template-columns:repeat(3,1fr);}}
+.derive .arrow{text-align:center;color:var(--muted);font-size:.78rem;margin:14px 0 2px;}
+.dcard{border:1px solid var(--line);border-radius:4px;padding:22px 22px 24px;position:relative;}
+.dcard .no{font-size:.9rem;font-weight:800;color:var(--yellow);}
+.dcard h4{font-size:1.02rem;font-weight:800;color:var(--navy);margin:6px 0 12px;line-height:1.4;}
+.dcard p{font-size:.86rem;line-height:1.7;color:var(--ink);}
+.dcard.feature{border:2px solid var(--navy);}
+.dcard.feature .flag{position:absolute;top:-1px;right:-1px;background:var(--navy);color:#fff;font-size:.68rem;font-weight:700;padding:4px 10px;border-radius:0 3px 0 4px;}
+.dcard ul{list-style:none;margin-top:10px;}
+.dcard ul li{font-size:.84rem;padding:5px 0 5px 14px;position:relative;line-height:1.6;}
+.dcard ul li::before{content:'';position:absolute;left:0;top:12px;width:5px;height:5px;background:var(--navy);}
+
+th,td{border:1px solid var(--line);padding:10px 12px;font-size:.86rem;text-align:center;}
+th{background:var(--navy);color:#fff;font-weight:700;}
+td.l{text-align:left;}
+td.strong{color:var(--navy);font-weight:700;}
+tr.hl td{background:#f7f9fc;font-weight:700;color:var(--navy);}
+.th-row td:first-child{background:#f7f9fc;font-weight:700;color:var(--navy);}
+
+/* 비교표 강조 열 (현장실습학기제) */
+.cmp{position:relative;border-collapse:separate;border-spacing:0;}
+.cmp th,.cmp td{border:1px solid var(--line);}
+.cmp th.feat{background:#08213f;}
+.cmp td.feat{background:#f2f6fc;color:var(--navy);font-weight:700;border-left:2px solid var(--navy);border-right:2px solid var(--navy);}
+.cmp tr:first-child th.feat{border-top:2px solid var(--navy);}
+.cmp tr:last-child td.feat{border-bottom:2px solid var(--navy);}
+
+.callout{border:1px solid var(--line);border-left:4px solid var(--yellow);border-radius:0 4px 4px 0;padding:14px 18px;font-size:.87rem;margin-top:18px;}
+.callout b{color:var(--navy);}
+.callout.red{border-left-color:#b03a2e;}
+.callout.red b{color:#b03a2e;}
+
+.kv{display:grid;grid-template-columns:150px 1fr;border:1px solid var(--line);border-radius:4px;overflow:hidden;}
+.kv>div{padding:11px 16px;font-size:.87rem;border-bottom:1px solid var(--line-soft);}
+.kv>div:nth-last-child(-n+2){border-bottom:none;}
+.kv .k{background:#f7f9fc;font-weight:700;color:var(--navy);}
+
+.formula{border:1px solid var(--navy);border-radius:4px;padding:18px 22px;background:var(--navy);color:#fff;font-size:.95rem;}
+.formula .lb{color:var(--yellow);font-weight:700;font-size:.8rem;letter-spacing:.08em;display:block;margin-bottom:6px;}
+.formula small{display:block;color:#b9c6da;font-size:.78rem;margin-top:6px;}
+
+/* ===== SEMESTER PAGES ===== */
+.sem-card{border:1px solid var(--line);border-radius:4px;padding:26px 26px 30px;margin-bottom:24px;}
+.sem-card h3{font-size:1.15rem;font-weight:800;color:var(--navy);margin-bottom:18px;}
+.sem-info{display:grid;gap:12px;margin-bottom:22px;}
+@media(min-width:640px){.sem-info{grid-template-columns:repeat(3,1fr);}}
+.sem-info .cell{border:1px solid var(--line-soft);border-radius:4px;padding:12px 16px;}
+.sem-info .cell .k{font-size:.75rem;color:var(--muted);display:block;}
+.sem-info .cell .v{font-size:1.02rem;font-weight:700;color:var(--navy);}
+.months{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;}
+.months .m{border:1px solid var(--line);border-radius:2px;text-align:center;font-size:.8rem;padding:9px 0;color:var(--muted);}
+.months .m.on{background:var(--navy);border-color:var(--navy);color:#fff;font-weight:700;}
+.months .m.recruit{border:2px solid var(--yellow);color:var(--navy);font-weight:700;}
+.legend{font-size:.78rem;color:var(--muted);margin-top:14px;}
+.legend .sq{display:inline-block;width:11px;height:11px;vertical-align:-1px;margin:0 5px 0 14px;border-radius:2px;}
+.legend .sq.navy{background:var(--navy);}
+.legend .sq.gold{border:2px solid var(--yellow);}
+
+/* ===== CONTACT ===== */
+.contact-grid{display:grid;gap:16px;margin-top:8px;}
+@media(min-width:760px){.contact-grid{grid-template-columns:repeat(4,1fr);}}
+.contact-grid .cell{border:1px solid var(--line);border-radius:4px;padding:18px;text-align:center;}
+.contact-grid .k{font-size:.78rem;color:var(--muted);display:block;margin-bottom:4px;}
+.contact-grid .v{font-size:.98rem;font-weight:700;color:var(--navy);}
+
+footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;font-size:.78rem;color:var(--muted);}
+
+/* ===== BACK TO TOP ===== */
+#toTop{position:fixed;right:24px;bottom:24px;width:46px;height:46px;border-radius:4px;background:var(--navy);color:#fff;border:none;cursor:pointer;font-size:1.2rem;line-height:1;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;z-index:200;box-shadow:0 2px 8px rgba(11,45,89,.25);}
+#toTop.show{opacity:1;visibility:visible;}
+#toTop:hover{background:#0d3468;}
+#toTop::after{content:'↑';font-weight:700;}
+
+/* ===== 진행과정 STEP CARDS ===== */
+.step-card{border:1px solid var(--line);border-radius:4px;padding:26px 26px 28px;margin-bottom:20px;position:relative;}
+.step-card .step-no{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-size:.85rem;font-weight:800;margin-right:10px;vertical-align:-7px;}
+.step-card h3{font-size:1.08rem;font-weight:800;color:var(--navy);display:inline;}
+.step-body{display:grid;gap:22px;margin-top:18px;}
+@media(min-width:760px){.step-body{grid-template-columns:1.1fr 1fr;align-items:start;}}
+.step-body ul{list-style:none;}
+.step-body ul li{font-size:.87rem;padding:6px 0 6px 14px;position:relative;line-height:1.65;}
+.step-body ul li::before{content:'';position:absolute;left:0;top:13px;width:5px;height:5px;background:var(--navy);}
+.step-body .path{display:inline-block;font-size:.78rem;color:var(--navy);background:#f2f6fc;border:1px solid var(--line);border-radius:3px;padding:3px 9px;margin-bottom:10px;font-weight:600;}
+.step-imgs{display:flex;flex-direction:column;gap:10px;}
+.step-imgs img{width:100%;height:auto;border:1px solid var(--line);border-radius:4px;display:block;box-shadow:0 1px 4px rgba(11,45,89,.08);}
+.step-imgs .cap{font-size:.74rem;color:var(--muted);text-align:center;}
+
+@media print{nav,header,#toTop{position:static;} }
+
+/* ===== VIEW SWITCHER ===== */
+.switcher-bar{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid var(--line);}
+.switcher-inner{max-width:1080px;margin:0 auto;padding:0 20px;height:46px;display:flex;align-items:center;gap:8px;}
+.switch-btn{font-family:inherit;font-size:.82rem;font-weight:700;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s;}
+.switch-btn:hover{background:#f2f6fc;}
+.switch-btn.active{background:var(--navy);border-color:var(--navy);color:#fff;}
+.view[hidden]{display:none;}
+.view header{top:46px;}
+.view nav{top:110px;}
+.view nav{top:110px;}
+/* ===== PROCESS SECTION TOGGLE ===== */
+.proc-toggle summary.page-title{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;user-select:none;margin-bottom:0;}
+.proc-toggle summary.page-title::-webkit-details-marker{display:none;}
+.proc-toggle summary.page-title::after{content:'';flex-shrink:0;width:12px;height:12px;border-right:2px solid var(--navy);border-bottom:2px solid var(--navy);transform:rotate(45deg);transition:transform .2s;margin-right:4px;}
+.proc-toggle[open] summary.page-title::after{transform:rotate(-135deg);}
+.proc-toggle summary.page-title:hover{color:#0d3468;}
+.proc-body{margin-top:30px;}
+/* ===== FAQ ACCORDION ===== */
+.faq-list{display:flex;flex-direction:column;gap:10px;}
+.faq-item{border:1px solid var(--line);border-radius:4px;background:#fff;overflow:hidden;}
+.faq-item summary{list-style:none;cursor:pointer;padding:16px 20px;display:flex;align-items:center;gap:12px;font-weight:700;color:var(--navy);user-select:none;position:relative;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'';position:absolute;right:20px;width:10px;height:10px;border-right:2px solid var(--navy);border-bottom:2px solid var(--navy);transform:rotate(45deg);transition:transform .2s;}
+.faq-item[open] summary::after{transform:rotate(-135deg);}
+.faq-item summary:hover{background:#f7f8fa;}
+.faq-no{flex-shrink:0;font-size:.82rem;font-weight:800;color:#fff;background:var(--navy);border-radius:3px;padding:3px 8px;}
+.faq-q{font-size:.95rem;line-height:1.4;padding-right:28px;}
+.faq-a{padding:0 20px 18px 62px;font-size:.88rem;color:var(--muted);line-height:1.6;}
+.faq-a p{margin-bottom:8px;}
+.faq-a p:last-child{margin-bottom:0;}
+
+.tw{overflow-x:auto;}
+.tw table{min-width:560px;}
+td.l ul{list-style:none;} td.l ul li{padding:2px 0 2px 12px;position:relative;font-size:.84rem;}
+td.l ul li::before{content:'';position:absolute;left:0;top:11px;width:4px;height:4px;background:var(--navy);}
+.u{text-decoration:underline;text-decoration-color:var(--yellow);text-decoration-thickness:2px;text-underline-offset:3px;font-weight:700;color:var(--navy);}
+.red{color:#b03a2e;font-weight:700;}
+.sub{font-size:.95rem;font-weight:700;color:var(--navy);margin:26px 0 10px;}
+.dl{list-style:none;} .dl li{font-size:.9rem;padding:6px 0 6px 16px;position:relative;line-height:1.7;}
+.dl li::before{content:'';position:absolute;left:0;top:15px;width:5px;height:5px;background:var(--navy);}
+ol.n{list-style:none;counter-reset:q;} ol.n>li{counter-increment:q;position:relative;padding:9px 0 9px 34px;font-size:.9rem;line-height:1.7;border-bottom:1px solid var(--line-soft);}
+ol.n>li:last-child{border-bottom:none;}
+ol.n>li::before{content:counter(q);position:absolute;left:0;top:10px;width:22px;height:22px;border-radius:50%;background:var(--navy);color:#fff;font-size:.74rem;font-weight:800;display:flex;align-items:center;justify-content:center;}
+.sched{display:grid;gap:12px;} @media(min-width:760px){.sched{grid-template-columns:repeat(5,1fr);}}
+.sched .st{border:1px solid var(--line);border-radius:4px;padding:16px 14px;}
+.sched .st .no{font-size:.8rem;font-weight:800;color:var(--yellow);}
+.sched .st h4{font-size:.95rem;font-weight:800;color:var(--navy);margin:4px 0 8px;}
+.sched .st .d{font-size:.84rem;font-weight:700;color:var(--ink);line-height:1.5;}
+.sched .st .s{font-size:.78rem;color:var(--muted);margin-top:6px;}
+.ph{background:#fff8e0;border-radius:2px;padding:0 3px;}
+.hero .ph{background:none;color:var(--yellow);padding:0;}
+.hero .meta{display:grid;gap:10px;margin-top:22px;} @media(min-width:760px){.hero .meta{grid-template-columns:repeat(4,1fr);}}
+.hero .meta div{border:1px solid rgba(255,255,255,.22);border-radius:4px;padding:11px 14px;}
+.hero .meta .k{display:block;font-size:.72rem;color:#b9c6da;} .hero .meta .v{font-size:1rem;font-weight:800;color:#fff;}
+@media(max-width:720px){.kv{grid-template-columns:110px 1fr;}}
+
+/* ===== RESPONSIVE ===== */
+.hd-brand>div{min-width:0;} .hd-brand .t,.hd-brand .s{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+@media(max-width:900px){.hero .meta{grid-template-columns:repeat(2,1fr);}.sched{grid-template-columns:repeat(2,1fr)!important;}}
+@media(max-width:640px){
+  .hd-inner{height:56px;padding:0 14px;} nav{top:56px;} .hd-brand img{height:24px;}
+  .hd-brand .t{font-size:.82rem;} .hd-brand .s{font-size:.66rem;}
+  .tab{padding:12px 11px;font-size:.82rem;} .nav-inner{padding:0 6px;}
+  .page{scroll-margin-top:104px;}
+  .wrap{padding:36px 16px 12px;} .page-title{font-size:1.28rem;} .page-desc{font-size:.86rem;margin-bottom:24px;}
+  h2.sec{font-size:1rem;margin:32px 0 14px;}
+  .hero{padding:22px 18px;} .hero h3{font-size:1.18rem;} .hero p{font-size:.86rem;}
+  .hero .meta{grid-template-columns:1fr 1fr;gap:8px;} .hero .meta div{padding:9px 11px;} .hero .meta .v{font-size:.88rem;}
+  .sched{grid-template-columns:1fr!important;gap:8px;} .sched .st{padding:12px 14px;} .sched .st h4{margin:2px 0 4px;font-size:.9rem;} .sched .st .no{font-size:.72rem;}
+  .kv{grid-template-columns:1fr;} .kv>div{border-bottom:none;padding:8px 14px;} .kv .k{padding-top:10px;} .kv>div:nth-child(even){border-bottom:1px solid var(--line-soft);} .kv>div:last-child{border-bottom:none;}
+  .callout{padding:12px 14px;font-size:.84rem;}
+  .box{padding:16px 16px;}
+  ol.n>li{padding-left:30px;font-size:.88rem;} .dl li{font-size:.88rem;}
+  /* tables -> cards */
+  .tw table{min-width:0;} .tw table,.tw thead,.tw tbody,.tw tr,.tw td{display:block;width:100%;}
+  .tw thead{position:absolute;left:-9999px;}
+  .tw tr{border:1px solid var(--line);border-radius:4px;margin-bottom:10px;overflow:hidden;background:#fff;}
+  .tw td{border:none;border-bottom:1px solid var(--line-soft);text-align:left;padding:9px 14px;display:flex;gap:12px;align-items:baseline;}
+  .tw td:last-child{border-bottom:none;}
+  .tw td::before{content:attr(data-label);flex:0 0 78px;font-size:.74rem;font-weight:700;color:var(--muted);}
+  .tw td.strong:first-child{background:var(--navy);color:#fff;display:block;font-size:.9rem;}
+  .tw td.strong:first-child::before{display:none;}
+  .tw td.l ul{flex:1;} .tw td>*{min-width:0;}
+  .tw td[data-label=""]::before{display:none;}
+  .contact-grid .cell{padding:14px;}
+}
+@media(max-width:380px){.hero .meta{grid-template-columns:1fr;}}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="hd-inner">
+    <div class="hd-brand">
+      <img src="data:image/png;base64,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" alt="INU 인천대학교"/>
+      <div>
+        <span class="t">2027학년도 계약학과 신·편입생 모집 안내</span>
+        <span class="s">국립인천대학교 · 경력개발고도화 과정(재교육형)</span>
+      </div>
+    </div>
+    <a class="hd-cta" href="#" target="_blank" rel="noopener">온라인 원서접수 바로가기</a>
+  </div>
+</header>
+<nav><div class="nav-inner" id="tabbar"><button class="tab active" data-page="pg-notice">지원자 유의사항</button><button class="tab" data-page="pg-dept">개설학과·정원</button><button class="tab" data-page="pg-flow">접수·전형일정</button><button class="tab" data-page="pg-fee">등록금·전형료</button><button class="tab" data-page="pg-detail">세부 전형</button><button class="tab" data-page="pg-interview">면접고사</button><button class="tab" data-page="pg-contract">계약체결</button><button class="tab" data-page="pg-docs">원서·서류제출</button><button class="tab" data-page="pg-register">합격·등록</button><button class="tab" data-page="pg-forms">각종 서식</button></div></nav>
+
+<!-- 1 -->
+<section class="page" id="pg-notice"><div class="wrap">
+  <div class="page-title">지원자 유의사항</div>
+  <div class="page-desc">원서접수 전 아래 내용을 반드시 확인해 주시기 바랍니다.</div>
+  <div class="hero">
+    <div class="lead">2027학년도 · 경력개발고도화 과정(재교육형)</div>
+    <h3>국립인천대학교 <em>계약학과</em><br/>신·편입생 모집</h3>
+    <p>산업체와 대학이 계약을 체결하여 설치·운영하는 계약학과로, 재직 중인 직원이 재교육과 직무능력 향상을 위한 교육을 받고 정규 학위를 취득할 수 있습니다.</p>
+    <div class="meta">
+      <div><span class="k">모집 학과</span><span class="v">AI융합반도체학과</span></div>
+      <div><span class="k">모집 학년·과정</span><span class="v">3학년 편입학</span></div>
+      <div><span class="k">입학정원</span><span class="v">30명</span></div>
+      <div><span class="k">전형방법</span><span class="v">면접 100%</span></div>
+    </div>
+  </div>
+  <h2 class="sec" style="margin-top:44px">유의사항</h2>
+  <ol class="n">
+    <li>계약학과는 산업체 맞춤형 인력 양성을 위하여 소속 직원의 재교육 및 직무능력 향상을 위한 교육을 실시하고 정규 학위를 취득할 수 있도록 산업체와 대학이 계약을 체결하여 설치·운영하는 제도입니다.</li>
+    <li>원서접수는 고지된 기한 내 지원학과를 통하여 <span class="u">계약학과 설치·운영 계약서를 제출한 산업체 소속 직원</span>만 가능합니다.</li>
+    <li>학과 개설요건 미충족 등의 사유로 모집단위가 미개설될 수 있으며, 이 경우 합격이 취소될 수 있습니다.</li>
+    <li>계약학과 학생의 휴학·복학은 원칙적으로 불가합니다. 다만 군복무, 출산, 질병 및 산업재해 등 본교 규정상 특별사유는 심의를 거쳐 허가할 수 있습니다.</li>
+    <li>지원자는 전형일정을 숙지하여 제출서류 등을 기한 내에 제출해야 하며, 일정 미확인 등으로 인하여 발생하는 불이익은 지원자 본인의 책임입니다.</li>
+    <li>제출서류 이외에 자격 및 사실 확인에 필요한 서류를 추가로 요구할 수 있으며, 요청기한까지 자격요건을 충족하지 못하면 합격자 사정에서 제외됩니다.</li>
+    <li>재교육형 계약학과 중 국가 재정 사업과 연계하여 운영될 경우, 별도의 서류가 요청되며 자세한 사항은 아래 내용을 확인하시기 바랍니다.</li>
+  </ol>
+</div></section>
+
+<!-- 2 -->
+<section class="page" id="pg-dept"><div class="wrap">
+  <div class="page-title">개설예정학과 및 입학정원</div>
+  <div class="tw"><table class=""><thead><tr><th>주관 대학</th><th>계약학과명</th><th>모집학년</th><th>과정</th><th>입학정원</th><th>수여학위</th><th>캠퍼스</th></tr></thead><tbody><tr><td>학부/전자공학과</td><td class="strong">AI융합반도체학과</td><td>3</td><td>편입학</td><td class="strong">30명</td><td>공학사</td><td>송도캠퍼스</td></tr></tbody></table></div>
+</div></section>
+
+<!-- 3 -->
+<section class="page" id="pg-flow"><div class="wrap">
+  <div class="page-title">원서접수 및 전형일정 안내</div>
+  <h2 class="sec">전형 절차</h2>
+  <div class="sched" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+    <div class="st"><span class="no">STEP 01</span><h4>계약서 및 계약관련 서류 제출</h4><div class="s">개설학과 제출 후 학사과·관계부서 검증</div></div>
+    <div class="st"><span class="no">STEP 02</span><h4>모집요강 및 유의사항 확인</h4><div class="s">지원자격·전형일정·등록 및 후학습모델 특수사항 확인</div></div>
+    <div class="st"><span class="no">STEP 03</span><h4>인터넷 원서접수</h4><div class="s">본교 입학 홈페이지 및 진학어플라이</div></div>
+    <div class="st"><span class="no">STEP 04</span><h4>원서관련 서류 제출</h4><div class="s">지정기간 내 등기우편 제출</div></div>
+    <div class="st"><span class="no">STEP 05</span><h4>면접 및 합격자 발표</h4><div class="s">본교 입학 홈페이지 공지</div></div>
+    <div class="st"><span class="no">STEP 06</span><h4>등록</h4><div class="s">산업체·학생 각 부담금 가상계좌 납부</div></div>
+  </div>
+  <div class="callout"><b>※ 계약서 및 산업체 검증을 완료한 자에 한하여 원서접수가 가능합니다.</b></div>
+
+  <h2 class="sec">전형 일정(안)</h2>
+  <div class="tw"><table class=""><thead><tr><th>구분</th><th>일정</th><th>안내 및 유의사항</th></tr></thead><tbody><tr><td class="strong">계약서 및 계약관련 서류 제출</td><td><span class="ph">0000.00.00 ~ 00.00</span></td><td class="l">지원학과 취합 후 학사과 검증</td></tr><tr><td class="strong">원서접수</td><td><span class="ph">2027. 1. ○.(○) 10:00 ~ 1. ○.(○) 17:00</span></td><td class="l">본교 입학 홈페이지 및 진학어플라이</td></tr><tr><td class="strong">원서관련 서류 제출</td><td><span class="ph">0000.00.00 ~ 00.00</span></td><td class="l">등기우편 제출</td></tr><tr><td class="strong">면접고사</td><td><span class="ph">0000.00.00</span></td><td class="l">대면 또는 비대면, 세부사항 추후 공고</td></tr><tr><td class="strong">최초 합격자 발표</td><td><span class="ph">0000.00.00</span></td><td class="l">본교 입학 홈페이지 공지</td></tr><tr><td class="strong">최초 합격자 등록</td><td><span class="ph">0000.00.00 ~ 00.00</span></td><td class="l"><span class="u">등록기간 내 미납 시 합격 취소</span></td></tr></tbody></table></div>
+</div></section>
+
+<!-- 4 -->
+<section class="page" id="pg-fee"><div class="wrap">
+  <div class="page-title">등록금 및 전형료</div>
+  <div class="tw"><table class=""><thead><tr><th>과정명</th><th>입학금</th><th>등록금액</th><th>산업체 부담금</th><th>학생 부담금</th></tr></thead><tbody><tr><td class="strong">학부/AI융합반도체학과</td><td><span class="ph">○원</span></td><td><span class="ph">○원</span></td><td class="strong">50% 이상</td><td class="strong">50% 이하</td></tr></tbody></table></div>
+  <ul class="note">
+    <li>등록금액은 2027학년도 등록금 확정 후 공지합니다.</li>
+    <li><span class="u">산업체 부담금은 산업체 명의 계좌에서 대학으로 직접 납부</span>하여야 하며, 학생이 선납하거나 산업체 부담금을 대납하여서는 안 됩니다.</li>
+    <li>환불·반환: 원서접수 완료 후 지원취소 및 변경은 원칙적으로 불가하며, 관계 법령 및 본교 기준에 따라 처리합니다.</li>
+  </ul>
+</div></section>
+
+<!-- 5 -->
+<section class="page" id="pg-detail"><div class="wrap">
+  <div class="page-title">세부 전형 안내</div>
+  <div class="page-desc">계약학과 신·편입학 전형(재교육형·후학습모델)</div>
+
+  <h2 class="sec">1. 지원자격</h2>
+  <p class="body">계약학과 설치·운영 계약서 제출업체(상시근로자 5인 이상)에서 원서접수일 기준 재직 중인 자로서, 소속 산업체의 장이 입학을 추천하고 학업을 적극 지원할 수 있는 자(<span class="u">계약학과 등록금의 50% 이상을 소속 산업체의 명의로 지원 받을 수 있는 자</span>) 중 아래 학력·재직조건을 충족하는 자.</p>
+  <div class="callout"><b>※</b> 단, 일학습병행 등 국가재정사업 분야 지원의 경우 상위 조건을 충족할 뿐 아니라 관련 기준에 따라 P-TECH 이수자 또는 일학습병행 자격취득자 중 일학습병행 실시기업과 동종 유사 분야 기업에 재직 중인 자를 대상으로 함 (그 외, 기타사항은 관련 기준에 따름)</div>
+
+  <h2 class="sec">2. 학력조건</h2>
+  <div class="grid2">
+    <div class="box"><h3>학부 신입학</h3><ul><li>고등학교 졸업자 또는 교육부장관이 이와 동등 이상의 학력이 있다고 인정한 자</li></ul></div>
+    <div class="box"><h3>학부 편입학</h3><ul><li>국내외 전문대학 졸업(예정)자, 4년제 대학 2학년 이상 수료(예정)자 등 본교 편입학 기준을 충족하는 자</li><li>단, 일학습병행 등 국가재정사업 분야 지원의 경우 P-TECH 이수자 또는 일학습병행 자격취득자여야 함</li></ul></div>
+    <div class="box"><h3>석사과정</h3><ul><li>학사학위 소지자 또는 관련 법령에 따라 동등 이상의 학력이 있다고 인정된 자</li></ul></div>
+    <div class="box"><h3>박사과정</h3><ul><li>석사학위 소지자 또는 관련 법령에 따라 동등 이상의 학력이 있다고 인정된 자</li></ul></div>
+  </div>
+
+  <h2 class="sec">3. 재직조건</h2>
+  <ul class="dl"><li><b>가.</b> 임금을 목적으로 근로를 제공하고 관계 법령상 요구되는 사회보험 및 근로관계 증빙을 갖춘 자 <span class="red">(고용보험을 납부하지 않는 대표 및 이사는 원칙적으로 선발 대상에서 제외)</span></li><li><b>나.</b> 산업체 등에서 2027학년도 1학기 입학일 기준으로 <span class="u">재직기간 합산 10개월 이상</span>인 자를 원칙으로 하며, 기한의 정함이 없는 근로자여야 하며, 만약 그러지 아니한 경우 기간제 근로자는 근로계약기간이 해당 계약학과 운영기간보다 장기간이어야 함.</li><li><b>다.</b> 지원학과 교육내용과 소속 기업의 업종 또는 수행직무가 관련되고 소속 기업의 추천을 받은 자</li><li><b>라.</b> 입학원서 접수일 기준 상시근로자 수 5인 이상 사업장에 재직중인 자 <span class="note" style="display:block">※ 계약학과 설치·운영 계약서 및 관계 사업기준을 충족하는 산업체에 재직 중인 자</span></li><li><b>마.</b> 대학과 동일 광역행정구역 또는 본교 직선거리 50km 이내 산업체의 재직자</li></ul>
+
+  <h2 class="sec">합격자 결정</h2>
+  <ul class="dl"><li><b>가.</b> 1차 산업체 및 지원자 자격증빙 검증, 2차 학력조건 검증, 3차 최종 학력검증을 실시합니다.</li><li><b>나.</b> 일학습병행 등 국가재정사업 분야 지원자의 경우 P-TECH 이수·자격취득 여부, 훈련종목과 지원학과·직무의 연계성, 프로젝트 계획 등을 추가 확인할 수 있습니다.</li><li><b>다.</b> 자격검증 후 면접전형 대상자를 선발하고, 전형요소별 점수를 합산하여 성적순으로 합격자를 결정합니다.</li><li><b>라.</b> 합격자 발표 후 지정기간 내 등록금을 납부한 자에 한하여 최종합격자로 결정합니다.</li></ul>
+</div></section>
+
+<!-- 6 -->
+<section class="page" id="pg-interview"><div class="wrap">
+  <div class="page-title">면접고사</div>
+  <div class="kv" style="margin-bottom:20px"><div class="k">면접방법</div><div>대면면접을 원칙으로 하되, 운영 여건에 따라 비대면 면접을 실시할 수 있습니다.</div></div>
+  <p class="sub">전형요소 반영비율</p>
+  <div class="tw"><table class=""><thead><tr><th>전형구분</th><th>모집단위</th><th>전형요소</th><th>평가등급</th></tr></thead><tbody><tr><td class="strong">계약학과 신·편입학 전형(재교육형)</td><td>학부</td><td class="strong">면접 100%</td><td>최고 100점 · 최저 60점</td></tr></tbody></table></div>
+</div></section>
+
+<!-- 7 -->
+<section class="page" id="pg-contract"><div class="wrap">
+  <div class="page-title">계약체결 및 후학습모델 운영 안내</div>
+  <div class="kv">
+    <div class="k">산업체 계약체결 요청방법</div><div>개설학과에 관계서류 제출 후 학사과 및 관계부서 검증</div>
+    <div class="k">산업체 제출서류</div><div>사업자등록증, 사회보험 사업장 가입자 명부, 완납증명서, 입학추천서, 재직증명서, 근로소득 관련 증빙, 근로계약서, 계약학과 설치·운영계약서 등</div>
+  </div>
+</div></section>
+
+<!-- 8 -->
+<section class="page" id="pg-docs"><div class="wrap">
+  <div class="page-title">원서접수 및 서류제출</div>
+  <div class="kv" style="margin-bottom:20px">
+    <div class="k">접수기간</div><div><span class="ph">2027. 1. ○.(○) 10:00 ~ 1. ○.(○) 17:00</span></div>
+    <div class="k">접수처</div><div>본교 입학 홈페이지 또는 진학어플라이</div>
+  </div>
+  <div class="tw"><table class=""><thead><tr><th>구분</th><th>제출서류</th></tr></thead><tbody><tr><td class="strong">공통</td><td class="l">입학원서, 개인정보 수집·이용 동의서, 재직증명서, 근로계약서, 입학추천서</td></tr><tr><td class="strong">신입학</td><td class="l">고등학교 졸업증명서 또는 검정고시 합격·성적증명서</td></tr><tr><td class="strong">편입학</td><td class="l">전적대학 성적증명서, 졸업·수료(예정)증명서 등 본교 편입학 기준 서류</td></tr><tr><td class="strong">후학습</td><td class="l"><ul><li>P-TECH 이수증명서 또는 일학습병행 자격증(취득예정증명서), 프로젝트 계획서, 직무기술서 또는 학습계획서</li></ul><p class="note">※ 합격자에게 건강보험 자격득실확인서, 4대 사회보험 가입내역, 표준훈련 근로계약서 등 추가 입학자격 서류를 요구할 수 있음</p></td></tr><tr><td class="strong">산업체</td><td class="l">사업자등록증, 사회보험 가입자 명부, 완납증명서, 산업체 설치·운영계약서, 산업체 부담금 납부 관련 서류</td></tr></tbody></table></div>
+</div></section>
+
+<!-- 9 -->
+<section class="page" id="pg-register"><div class="wrap">
+  <div class="page-title">합격 및 등록관련 유의사항</div>
+  <ol class="n">
+    <li>지원자는 모집요강 및 본교 입학 홈페이지 공지사항을 숙지하여야 하며, 미숙지로 인한 불이익은 지원자 본인의 책임입니다.</li>
+    <li>지원자격 미달, 면접 결시, 서류 미제출, 허위·위조·부정자료 제출, 산업체 부담금 직접 납부 원칙 위반 등은 <span class="u">합격 또는 입학 취소 사유</span>가 될 수 있습니다.</li>
+  </ol>
+</div></section>
+
+<!-- 10 -->
+<section class="page" id="pg-forms"><div class="wrap">
+  <div class="page-title">각종 서식</div>
+  <div class="page-desc">각 서식은 최종 운영계획 및 관계기관 양식 확정 후 별도 첨부합니다.</div>
+  <ol class="n">
+    <li>계약학과 입학 추천서</li>
+    <li>개인정보 불일치 사항 확인서</li>
+    <li>인천대학교 계약학과 신·편입학 원서</li>
+    <li>계약학과 설치·운영 협약서(후학습모델 특약 포함)</li>
+    <li>후학습모델 학습·프로젝트 계획서 (필요하면)</li>
+    <li>일학습병행 참여 서약서 (<span class="ph">한국공학기술대학교 샘플</span>)</li>
+  </ol>
+</div></section>
+
+<footer>국립인천대학교 | 2027학년도 계약학과 신·편입생 모집요강(경력개발고도화 과정) | © 2027 Incheon National University</footer>
+<button id="toTop" aria-label="맨 위로"></button>
+
+<script>
+const toTop=document.getElementById('toTop');
+const tabs=[...document.querySelectorAll('.tab')];
+const nav=document.querySelector('nav');
+tabs.forEach(b=>b.addEventListener('click',()=>{const t=document.getElementById(b.dataset.page);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});}));
+const spy=tabs.map((t,i)=>({i,sec:document.getElementById(t.dataset.page)})).filter(o=>o.sec);
+let tick=false;
+function onScroll(){if(tick)return;tick=true;requestAnimationFrame(()=>{
+  let cur=0;spy.forEach(o=>{if(o.sec.getBoundingClientRect().top-140<=0)cur=o.i;});
+  if(innerHeight+scrollY>=document.body.offsetHeight-4)cur=spy.length-1;
+  tabs.forEach((t,i)=>t.classList.toggle('active',i===cur));
+  const at=tabs[cur],nr=nav.getBoundingClientRect(),ar=at.getBoundingClientRect();
+  if(ar.left<nr.left||ar.right>nr.right)at.scrollIntoView({inline:'center',block:'nearest'});
+  toTop.classList.toggle('show',scrollY>400);tick=false;});}
+addEventListener('scroll',onScroll,{passive:true});addEventListener('load',onScroll);
+toTop.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+</script>
+
+<script>
+document.querySelectorAll('.tw table').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th'),function(x){return x.textContent.trim()});[].forEach.call(t.querySelectorAll('tbody tr'),function(r){[].forEach.call(r.children,function(c,i){c.setAttribute('data-label',h[i]||'')})})});
+</script>
+</body></html>
