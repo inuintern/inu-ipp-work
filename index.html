@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>2027학년도 계약학과 신·편입생 모집 안내 | 인천대학교</title>
+<title>2027학년도 계약학과 편입생 모집 안내 | 인천대학교</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
 <style>
 :root{
@@ -429,6 +429,27 @@ ol.n>li::before{content:counter(q);position:absolute;left:0;top:10px;width:22px;
 }
 @media(max-width:380px){.hero .meta{grid-template-columns:1fr;}}
 
+
+/* ===== SURVEY POPUP ===== */
+.pop-ov{position:fixed;inset:0;z-index:1000;background:rgba(11,45,89,.55);display:flex;align-items:center;justify-content:center;padding:20px;}
+.pop-ov[hidden]{display:none;}
+.pop{background:#fff;border-radius:6px;max-width:520px;width:100%;max-height:calc(100vh - 40px);overflow-y:auto;border-top:5px solid var(--yellow);box-shadow:0 12px 40px rgba(0,0,0,.3);}
+.pop-hd{background:var(--navy);color:#fff;padding:20px 24px 18px;}
+.pop-hd .lead{font-size:.72rem;font-weight:700;letter-spacing:.1em;color:var(--yellow);margin-bottom:6px;}
+.pop-hd h3{font-size:1.18rem;font-weight:800;line-height:1.45;}
+.pop-bd{padding:20px 24px 8px;font-size:.88rem;line-height:1.75;}
+.pop-bd p{margin-bottom:10px;}
+.pop-bd .due{border:1px solid var(--line);border-left:4px solid var(--yellow);border-radius:0 4px 4px 0;padding:11px 14px;margin:14px 0 4px;font-size:.86rem;}
+.pop-bd .due b{color:var(--navy);}
+.pop-bd .due small{display:block;color:var(--muted);font-size:.78rem;}
+.pop-cta{display:block;margin:16px 24px 6px;text-align:center;background:var(--navy);color:#fff;font-weight:800;font-size:.95rem;padding:13px 16px;border-radius:4px;transition:background .15s;}
+.pop-cta:hover{background:#0d3468;}
+.pop-cta::after{content:' ↗';color:var(--yellow);font-weight:400;}
+.pop-ft{display:flex;justify-content:space-between;align-items:center;padding:10px 24px 16px;gap:10px;}
+.pop-ft button{font-family:inherit;font-size:.8rem;color:var(--muted);background:none;border:none;cursor:pointer;padding:6px 2px;}
+.pop-ft button:hover{color:var(--navy);text-decoration:underline;}
+@media(max-width:640px){.pop-hd{padding:18px 18px 16px;}.pop-hd h3{font-size:1.05rem;}.pop-bd{padding:16px 18px 6px;}.pop-cta{margin:14px 18px 4px;}.pop-ft{padding:8px 18px 14px;}}
+
 </style>
 </head>
 <body>
@@ -437,7 +458,7 @@ ol.n>li::before{content:counter(q);position:absolute;left:0;top:10px;width:22px;
     <div class="hd-brand">
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhsAAAEtCAYAAACh7KKQAAAYEUlEQVR4nO3dP5YbVd7G8QeOo0qsjJDeAZoVINJK3F4BmkDx6F0BYgVvEVeAWIFFohSxA7EDETq7JIo4ZybQFW7brVaVVLd+98/3cw7nzOB2+5mB7v5KVbr6QgDg/f3uq9eSdpKmtkvQ0+7V2/ffWY8ALvnSegCAOBAaAEIhNgAQGgCCIjaAwhEaAEIjNoCCERoAxkBsAIUiNACMhdgACkRoABgTsQEUhtAAMDZiAygIoQHAArEBFILQAGCF2AAKQGgAsERsAJkjNABYIzaAjBEaAGJAbACZIjQAxILYADJEaACICbEBZIbQABAbYgPICKEBIEbEBpAJQgNArIgNIAOEBoCYERtA4ggNALEjNoCEERoAUkBsAIkiNACkgtgAEkRoAEgJsQEkhtAAkBpiA0gIoQEgRcQGkAhCA0CqiA0gAYQGgJQRG0DkCA0AqSM2gIgRGgByQGwAkSI0AOSC2AAiRGgAyAmxAUSG0ACQG2IDiAihASBHxAYQCUIDQK6IDSAChAaAnBEbgDFCA0DuiA3AEKEBoATEBmCE0ABQilfWA4CCzSRt/F9Iw8p6AJCiL6wHAEAq/n731X+tN1ywe/X2/XfWI4BLuIwCAACCIjYAAEBQxAYAAAiK2AAAAEERGwAAIChiAwAABEVsAACAoIgNAAAQFLEBAACCIjYAAEBQxAYAAAiK2AAAAEERGwAAIChiAwAABEVsAACAoIgNAAAQFLEBAACCelXV7X+tR4zpuF18Yb0BCKWq2x8krax3jGh33C6+sx4B9FXaz16e2QAAAEF9KclZjxiRsx4ABOasB4xsbz0AuJGzHjCmLyUtrUeM6NF6ABDScbv4SdLOesdI9irrkhHy8mg9YETLL4/bxS+SNtZLRrA6bhe/W48ARjBX/o+anKT5cbv4y3oI7lPV7TdV3b6r6va3qm5/rur2G+tNY/A/j1bWO0awOW4XP53v2ZhLOthtCW5/3C5+tB4BjOG4Xfyp09d0zlbH7eIP6xG4T1W33+v0DNWjpJlO/95urPaMzf9c2lvvCMjJfy/6UpL8o4O52Zzw5tYDgDEdt4tfle837Z2/XISE+dBYP/NLD1XdfjvyHEuP1gMC+ufZx39ejeKf0tlYLQqIR0Ao1Vx5Xk6ZWw/AfV4IjbPJOEvs+WciV9Y7Atj4Bz2SPn/p61x5fXM6SGqMNwAm/COKlfWOga38N2ckqkNoSNI0/JJ4+MspB+sdA3L65MUnH8WG/+bUjDYnvBU3kKFk/nLDwXrHQJzy+v5UnI6hUaqV9YABNZ8+KHjuUK9GeTy7cfCvtAFeVNXt66pu31jvCGhlPWAgDQ8e0kVovMz/vDpY7xiA0zMPCj6LjYye3VhZD0D8qrp9rdO5FGv/n7OTyTcxpzy+LxWJ0OhsZT1gAM8+KLh0XHkTdktwjmc1cM2T0JjqdENaY7cmuMZ6wJ3WPKuRJkKju0weGKyf+5vPxob/ot4EHBPa2noA4vZJaJzNM37J3dp6wJ0a6wHoj9C4ydp6wB02l27gfumN2NZhtoxibT0A8boQGmfrMbeMJfEHEHtegZIeQuNma+sBd9hc+oWLsfH09bGJOXCuBi65EhrS6UChH0YbNK6N9YAbra0HoB9C43Y+rPfWO260ufQL195i/uJvjNjGegDi1CE0zlZV3X4dfND4NtYDbrSzHoDuCI1B7KwH3GDz0n1V12JjN+yWUeysByA+PULjbB1qixX/jWBvvaMnxzOV6SA0BrOxHnCD3Uu/eC029oPNGM/OegDickNoSNLMf+PMzc56QE876wHohtAY1N56wA32L/3ii7GR4FuyH3h5HJ66MTTOmgzP3thbD+hpbz0A1xEaw/I/xw7WO/q41gvXntmQ0vpiP1gPQDzuDA0pz7M3DtYDetpbD8DLCI1g9tYDejhc+4AuseHunjGenfUAxGGA0DjL7eyNvfWAnpz1AFxGaAS1tx7Qw+HaB3SJjd3dM4ARDRgaZ81An8dcapcZE7yUWwxCIzhnPaCH/bUP6BIbKdlbD4CtAKEhSdPMzt7YWw9A2giNUeytB/Tgrn1AbrHhrAfATqDQOFtmdPaGsx7QkbMegM8RGrgFl1GQhcChIZ1uFl0H+tx43t56AD5GaOCC/bUPyO2ZDRRohNA4m1V1+ybwnwFEidDAC9y1DyA2kLQRQ+NsneHZG8CLCA3ci9hAsgxCQzpdTlmN+OcBpggNDIHYQJKMQuNsmdnZG8CzCA0MhdhAcoxD46wx/LOB4AgNDInYQFIiCQ3pdPbGf4w3AEEQGhgasYFkRBQaZ6uMzt4AJBEaCIPYQBIiDA0pzzdqQ8EIDYRCbCB6kYbG2SNnbyAHhAZCIjYQtchD46zh7A2kjNBAaMQGopVIaEjSgzh7A4kiNDAGYgNRSig0zpZV3X5jPQLog9DAWIgNRCfB0DhrrAcAXREaGBOxgagkHBrS6Y3aOHsD0SM0MDZiA9FIPDTOVtwsipgRGrBAbCAKmYSGdDp7Y228AXgWoQErxAbMZRQaZ4+8URsitbYegDIRGzCVYWicrbmcAgAnxAbMZBwa0unsjaXxBgCIArEBE5mHxtmKszcAgNiAgUJC46yxHgAA1ogNjKqw0JBOZ298bz0CACwRGxhNgaFxxhu1ASgasYFRFBwa0unsjcZ4AwCYITYQXOGhcTbn7A0ApSI2EBSh8ZG19QAAsEBsIBhC4zMPVd3+YD0C2XHiTBdEjthAEITGRauqbr+2HoFsOEmzV2/f/2E9BHgJsYHBERpXra0HIAtOhAYSQWxgUIRGJ5y9gXs5ERpICLGBwRAavXD2Bm7lRGggMcQGBkFo9DaRtDLegPQ4ERpIELGBuxEaN1ty9gZ6cCI0kChiA0NYitC4VWM9AElwIjSQMGIDsDXl7A1c4URoIHHEBmBvydkbuMCJ0EAGiA3A3kScvYHPOREayASxAcRhVtXtG+sRiIYToYGMEBtAPDh7AxKhgQwRG0A8HsTZG6VzIjSQIWIDiMuyqttvrEfAhBOhgUwRG0B81tYDMDonQgMZIzaA+Eyruv2P9QiMxonQQOaIDSBOK87eKIIToYECEBtAnCbiKPPcOREaKASxAcTrkbM3suVEaKAgxAYQN87eyI8ToYHCEBtA3B50eldd5MGJ0ECBiA0gfivO3siCE6GBQhEbQBoa6wG4ixOhgYIRG0AaZpy9kSwnQgOFIzaAdKy4WTQ5ToQGQGwACZmIo8xT4kRoAJKIDSA1j1Xdfms9Alc5ERrAP4gNID1rLqdEzYnQAD5CbKA0K+sBA3gQZ2/EyonQAD5DbKA0jaSD8YYh8EZt8XEiNIBnERsoynG7+EvS3HrHQNbWA/APJ0IDuIjYQHGO28XvkjbWOwYwq+r2e+sRIDSAa4gNlGqp0w+J1PFGbbacCA3gKmIDRTpuF38qj5tFJ+IocytOhAbQCbGBYh23i58k7a13DGDO2RujcyI0gM6IDZRubj1gIGvrAQVxIjSAXogNFO24XfyhPC5DPFR1+4P1iAI4ERpAb8QGcLp342C8YQhLzt4IbkpoAP0RGyieP3tjab1jABNxOSWoV2/f/2m9AUgRsQFIOm4XvyqfszfeWI8AgKeIDeCDpfI4e4M3agMQFWID8PzZG431jgFMlMcZIgAyQWwATxy3ix+Vx9kbS87eABALYiMhf7/7iqfGx7G0HjCQxnoAAEjERjJ8aOysd5TAv1FbY71jAFPO3gAQA2IjAU9CY2q7pCgr5XGzKGdvADBHbESO0LDhz96YW+8YwER5PEsDIGHERsQIDVv+7I2d9Y4BPHL2BgBLxEakCI1ozK0HDKTh7A0AVoiNCBEa8fBnb6ysdwzgQXn87wCQIGIjMoRGfPzZGwfrHQNYVnX7jfUIAOUhNiJCaERtbj1gIGvrAQDKQ2xEgtCImz97Y229YwBTSTPjDQAKQ2xEgNBIxlJ5nL0BAKMiNowRGunwZ28srXcAQGqIDUOERnqO28UvyuPsDQAYDbFhhNBI2tx6AACkhNgwQGikLaOzNwBgFMTGyAiNbDTK4+wNAAiO2BgRoZGPjN6oDQCCIzZGQmjkx5+9sbHeAQCxIzZGQGhkbS7O3gCAFxEbgREaefOXU1bWOwAgZsRGQIRGGY7bxU/i7A0AuIjYCITQKM7SegAAxIrYCIDQKM9xu/hDXE5B/A7WA1AmYmNghEbRGvHNHHE7WA9Afvwr815EbAyI0Cgbb9QGDGZqPSACD9YDhkRsDITQgCQdt4tfxdkbiNfBekBHE+sBEXiwHtCR6/JBxMYACA18YinO3kCcDtYDOppZD4jA1HpAR/suH0Rs3InQwKd4ozZEzFkP6Kqq26+tNxibWg8YErFxB0IDl/izN/bWO4BP7K0H9DCzHmDFh9aD9Y6Odl0+iNi4EaGBDubWA4BPHKwH9DCzHmBoZj2gB9flg4iNGxAa6MKfvdFY7wDO/CW+VDxaDzD0aD2gh32XDyI2eiI00NNKCV0nj4gTLyMOZWc9oKNJVbdvrEeMrarb10ooNrqcsSERG70QGujLn70xt96RGCdp5p8ZwvD21gN6eLQeYODRekAPh64fSGx0RGjgVv7sjZ31jkQ4ERqh7a0H9DD3j/RLsrQe0MO+6wcSGx0QGhjAXFxOucaJ0BjD3npAT0vrAWOp6vZbpfVzZtf1A4mNKwgNDMHfmNdY74iYE6ExCv//sbPe0cOyoGc3VtYDetp1/UBi4wWEBoZ03C5+VHqPKsfgRGiMbWc9oIeJCnh2wz+rMbPe0YPr8zVLbFxAaCCQpfWAyDgRGhZ21gN6WhVwomhjPaCnXZ8PJjaeQWggFP8yscZ6RyScCA0rG+sBN1hbDwilqtsflN7Pm12fDyY2nrdWev/gkY6V0rpmHoIToWHG30N0sN7R06yq2/9YjxhaVbffKL17NaSewUpsPG9iPQD58mdvLK13GHIiNGKwsR5wg5X/4ZwFf+Pr2nrHDfZ9T6MlNgADx+3iF6V33XwIToRGLNbWA24wkbTJ6NUpjdJ8Fn3d9zcQG4CdufWAkTkRGtHw/xwO1jtu8CBpl3pwVHX7/0r3e8Cm728gNgAj/mnIlfWOkTgRGjHaWA+40VTpbldVt98r3UupvS+hSMQGYMqfvXGw3hGYE6ERq8Z6wB1mVd3+ltozHP4m17X1jjs0t/wmYgOwN7ceEJAToREt/wh1Z73jDjMldEmlqtuflXbgSTc+o0RsAMb82Rtr6x0BOBEaKVhbD7jTVNIh5lepVHX7uqrb35T+A4u1fzVdb7nFhrMeANxoqbz+/XUiNJLgXxnlrHfcaSJp7w/Hioo/hvygtI4iv6S59TfmFBtzvrEhVf7Rwsp6x0CcCI3UNNYDBrLy93GYP8vhn834WafLVBPbNYPY3fM1nUtszH2dA8k6bhc/Ke3r5xKhkapG6T+7cTbT6VmOny3eT8VHxg86PZsxH/vPD6i55zfnEBuEBnKytB5wBydCI0n+mbW19Y6BzXW6l2OU6PgkMlbK49mMs8Nxu/j1nk+QemwQGsiK/0G9st5xAydCI3WN9YBA5jpFx29V3X4/9CtXqrp94y+XOOUXGWerez/BqwFGWCE0kKtGp2+QD6YrunMiNJJ33C7+rOp2pTRjt4uZ/0tV3e50umS50+mQqs6vsPA3fE6ffL7JYAvjdBjiZ22qsUFoIFvH7eKvqm7nSuP+DSdCIyeNTpfyJqYrwpvpyatDqrp1kvb+vx704aC9iT68d8mD0nkAMKT5EJ8kxdggNJC943bxe1W3G0mPxlNe4kRoZMWHbqN8n924ZKI8Xpo6tJ0/B+huqd2zQWigJHPF+woBJ0IjS4UcoY9ulkN9opRig9BAUSI+e8OJ0Mjd0noAzDVDfo2nEhuEBorkz97YW+94wonQyJ5/mePGegfMOA38QCeF2CA0ULq59QDPidAoyVLxXsZDWPNb3wPlkthjg9BA8fwP98Z4hhOhURT/jrAr6x0Y3ebeA7yeE3NsEBrAByvZ3bTnRGgUKZMj9NGdU6BnUmONDUIDeMI/pbk0+KOdCI3SPYrLKaUY/PLJWYyxQWgAzzC4ac+J0Cie/+Ezt96B4JoQl0/OYosNQgN42VLjPMp0IjTg+R9CjfUOBLM/bhf/F/IPiCk2CA3gipFu2nMiNPAJ/8NoZ70Dg3Ma4fTUWGKD0EjbzHpASQKfveFEaOCyR3G6aG5moe7TeCqG2CA0gP6WAT6nE6GBF/gfSo/ihtFczMf6ereODUIjDxPrAV35t4dOnn9zpGbAT+lEaKAD/+/IzHoH7rYa8+evZWwQGvmYWg8o1ErDPMJ0IjTQg/93ZW69Azdb+zfcG41VbBAamajq9rX1hp5m1gOGMtBLEp0IDdzAfw+fW+9Ab+vjdvHvsf9Qi9ggNPIytR7Q04P1gCH5lyTubvztToQG7kBwJMckNKTxY4PQyM/MekBPU+sBAczV/3KKE6GBARAcyTALDWnc2CA08jS1HtDTNMFLPy/yZ280PX6LE6GBAREc0TMNDWm82CA08jWzHnCDmfWAofmbvQ4dPtSJ0EAABEe0zENDGic2CI1M+ZeRTqx33ODRekAg8yu/7kRoICD/vX4qzuGIxTKG0JDCxwahkbe59YAbPVoPCMGfvbG+8MtOhAZG8OQcjr3tkqI5SY/+tOEohIwNQiN/j9YDbjSp6vaN9YhAlvr8UaUToYERPQmOje2SIh10+noP9g6utwgVG4RG5qq6/V5pXkI5m1sPCMGfvbF88recCA0YOG4Xfx23i7cK/8aB+GAjaRrj13uI2CA0yjC3HnCnx6puv7YeEYL/+tuJ0EAE/M3LM3EfR2jL43bxdow3VbvF0LFBaBTA3xg6s94xgJX1gIDmIjQQCX8/0YO4rBLCXqdnM6K5P+M5X1z7AP+DZdfhc2UTGn+/++o3RfrD9NXb91f/mYVW1W20///c4MGfUwFgBP5+qbXSvgwbi9XY73Fyq6Ge2cgmNPAy/41iZr1jQI31AKAk/sbFB11+5RSu2+v0bEYSoSENExuERiH8yZuN9Y6BPebytvNAKvzNo/8WL5Hty+l0b8a/UrtE2iU2Di/8GqFRlpUyeyMzb53bEeZACo7bxe/H7eJfuu39fUqz0umyb9T3ZlxyNTYuvO+C0+nmM0KjEP7R/9J6RyAPyvtmUSBq/mfJg05fh85yS4TWOkXGj7G+0qSLzjcbPnkFgtPprPVk/0dfww2iH/OP+vfK81mNp2b+rnkARvz3m6X/a2K5xdhapxtAs7iB3fyVDTEiNj5W1e07pXtaaB9Op0cQ2YY0kBJ/eOBK+T/QOXM6XUlY5xIZZ6+sByBu/ov90XrHSCY6PZp4azsDgPTP5ZVf/DPrc6V/mOAlO50CI9tbE4gNXPNgPWBkE+sBAD7mL2/+XtXtUqcHP0ud3l02ZQedDjlrcnsW4znEBgAgCf4S5/nZjq91Co+Z0nn2da8Pz2Ik9dLVe3HPxjO4ZwMA0uFvKp09+Wtqt+YjB53iYidpV8IzGJfwg+sZxAYApO3JKyinOl0Ongb+Iw/6EBd7SfuS4+JTXEYBAGTnfJ/H07/nL708PPlL6v/Acq/Tq0bc+T+XdknkFjxKfgbPbAAAMJyh32IeAADgI8QGAAAIitgAAABBERsAACAoYgMAAARFbAAAgKCIDQAAEBSxAQAAgiI2AABAUMQGAAAIitgAAABBERsAACAoYgMAAARFbAAAgKCIDQAAENQr6wHo5+93X31rvQG9uFdv3/9hPQIALBEb6dlZD0BnTtLMeAMAmOMyChCGkzTjWQ0AIDaAEJwIDQD4B7EBDMuJ0ACAjxAbwHCcCA0A+AyxAQzDidAAgGcRG8D9nAgNALiI2ADu40RoAMCLiA3gdk6EBgBcRWwAt3EiNACgE2ID6M+J0ACAzogNoB8nQgMAeiE2gO6cCA0A6I3YALpxIjQA4CbEBnCdE6EBADcjNoCXOREaAHAXYgO4zInQAIC7ERvA85wIDQAYBLEBfM6J0ACAwRAbwMecCA0AGBSxAXzgRGgAwOCIDeDEidAAgCCIDYDQAICgiA2UzonQAICgiA2UzInQAIDgiA2UyonQAIBREBsokROhAQCjITZQGidCAwBGRWygJE6EBgCMjthAKZwIDQAwQWygBE6EBgCYITaQOydCAwBMERvImROhAQDmiA3kyonQAIAoEBvIkROhAQDRIDaQGydCAwCiQmwgJ06EBgBEh9hALpwIDQCI0v8ABD1RHNIPKnMAAAAASUVORK5CYII=" alt="INU 인천대학교"/>
       <div>
-        <span class="t">2027학년도 계약학과 신·편입생 모집 안내</span>
+        <span class="t">2027학년도 계약학과 편입생 모집 안내</span>
         <span class="s">국립인천대학교 · 경력개발고도화 과정(재교육형)</span>
       </div>
     </div>
@@ -452,7 +473,7 @@ ol.n>li::before{content:counter(q);position:absolute;left:0;top:10px;width:22px;
   <div class="page-desc">원서접수 전 아래 내용을 반드시 확인해 주시기 바랍니다.</div>
   <div class="hero">
     <div class="lead">2027학년도 · 경력개발고도화 과정(재교육형)</div>
-    <h3>국립인천대학교 <em>계약학과</em><br/>신·편입생 모집</h3>
+    <h3>국립인천대학교 <em>계약학과</em><br/>편입생 모집</h3>
     <p>산업체와 대학이 계약을 체결하여 설치·운영하는 계약학과로, 재직 중인 직원이 재교육과 직무능력 향상을 위한 교육을 받고 정규 학위를 취득할 수 있습니다.</p>
     <div class="meta">
       <div><span class="k">모집 학과</span><span class="v">AI융합반도체학과</span></div>
@@ -511,7 +532,7 @@ ol.n>li::before{content:counter(q);position:absolute;left:0;top:10px;width:22px;
 <!-- 5 -->
 <section class="page" id="pg-detail"><div class="wrap">
   <div class="page-title">세부 전형 안내</div>
-  <div class="page-desc">계약학과 신·편입학 전형(재교육형·후학습모델)</div>
+  <div class="page-desc">계약학과 편입학 전형(재교육형·후학습모델)</div>
 
   <h2 class="sec">1. 지원자격</h2>
   <p class="body">계약학과 설치·운영 계약서 제출업체(상시근로자 5인 이상)에서 원서접수일 기준 재직 중인 자로서, 소속 산업체의 장이 입학을 추천하고 학업을 적극 지원할 수 있는 자(<span class="u">계약학과 등록금의 50% 이상을 소속 산업체의 명의로 지원 받을 수 있는 자</span>) 중 아래 학력·재직조건을 충족하는 자.</p>
@@ -519,8 +540,7 @@ ol.n>li::before{content:counter(q);position:absolute;left:0;top:10px;width:22px;
 
   <h2 class="sec">2. 학력조건</h2>
   <div class="grid2">
-    <div class="box"><h3>학부 신입학</h3><ul><li>고등학교 졸업자 또는 교육부장관이 이와 동등 이상의 학력이 있다고 인정한 자</li></ul></div>
-    <div class="box"><h3>학부 편입학</h3><ul><li>국내외 전문대학 졸업(예정)자, 4년제 대학 2학년 이상 수료(예정)자 등 본교 편입학 기준을 충족하는 자</li><li>단, 일학습병행 등 국가재정사업 분야 지원의 경우 P-TECH 이수자 또는 일학습병행 자격취득자여야 함</li></ul></div>
+        <div class="box"><h3>학부 편입학</h3><ul><li>국내외 전문대학 졸업(예정)자, 4년제 대학 2학년 이상 수료(예정)자 등 본교 편입학 기준을 충족하는 자</li><li>단, 일학습병행 등 국가재정사업 분야 지원의 경우 P-TECH 이수자 또는 일학습병행 자격취득자여야 함</li></ul></div>
     <div class="box"><h3>석사과정</h3><ul><li>학사학위 소지자 또는 관련 법령에 따라 동등 이상의 학력이 있다고 인정된 자</li></ul></div>
     <div class="box"><h3>박사과정</h3><ul><li>석사학위 소지자 또는 관련 법령에 따라 동등 이상의 학력이 있다고 인정된 자</li></ul></div>
   </div>
@@ -537,7 +557,7 @@ ol.n>li::before{content:counter(q);position:absolute;left:0;top:10px;width:22px;
   <div class="page-title">면접고사</div>
   <div class="kv" style="margin-bottom:20px"><div class="k">면접방법</div><div>대면면접을 원칙으로 하되, 운영 여건에 따라 비대면 면접을 실시할 수 있습니다.</div></div>
   <p class="sub">전형요소 반영비율</p>
-  <div class="tw"><table class=""><thead><tr><th>전형구분</th><th>모집단위</th><th>전형요소</th><th>평가등급</th></tr></thead><tbody><tr><td class="strong">계약학과 신·편입학 전형(재교육형)</td><td>학부</td><td class="strong">면접 100%</td><td>최고 100점 · 최저 60점</td></tr></tbody></table></div>
+  <div class="tw"><table class=""><thead><tr><th>전형구분</th><th>모집단위</th><th>전형요소</th><th>평가등급</th></tr></thead><tbody><tr><td class="strong">계약학과 편입학 전형(재교육형)</td><td>학부</td><td class="strong">면접 100%</td><td>최고 100점 · 최저 60점</td></tr></tbody></table></div>
 </div></section>
 
 <!-- 7 -->
@@ -556,7 +576,7 @@ ol.n>li::before{content:counter(q);position:absolute;left:0;top:10px;width:22px;
     <div class="k">접수기간</div><div><span class="ph">2027. 1. ○.(○) 10:00 ~ 1. ○.(○) 17:00</span></div>
     <div class="k">접수처</div><div>본교 입학 홈페이지 또는 진학어플라이</div>
   </div>
-  <div class="tw"><table class=""><thead><tr><th>구분</th><th>제출서류</th></tr></thead><tbody><tr><td class="strong">공통</td><td class="l">입학원서, 개인정보 수집·이용 동의서, 재직증명서, 근로계약서, 입학추천서</td></tr><tr><td class="strong">신입학</td><td class="l">고등학교 졸업증명서 또는 검정고시 합격·성적증명서</td></tr><tr><td class="strong">편입학</td><td class="l">전적대학 성적증명서, 졸업·수료(예정)증명서 등 본교 편입학 기준 서류</td></tr><tr><td class="strong">후학습</td><td class="l"><ul><li>P-TECH 이수증명서 또는 일학습병행 자격증(취득예정증명서), 프로젝트 계획서, 직무기술서 또는 학습계획서</li></ul><p class="note">※ 합격자에게 건강보험 자격득실확인서, 4대 사회보험 가입내역, 표준훈련 근로계약서 등 추가 입학자격 서류를 요구할 수 있음</p></td></tr><tr><td class="strong">산업체</td><td class="l">사업자등록증, 사회보험 가입자 명부, 완납증명서, 산업체 설치·운영계약서, 산업체 부담금 납부 관련 서류</td></tr></tbody></table></div>
+  <div class="tw"><table class=""><thead><tr><th>구분</th><th>제출서류</th></tr></thead><tbody><tr><td class="strong">공통</td><td class="l">입학원서, 개인정보 수집·이용 동의서, 재직증명서, 근로계약서, 입학추천서</td></tr><tr><td class="strong">편입학</td><td class="l">전적대학 성적증명서, 졸업·수료(예정)증명서 등 본교 편입학 기준 서류</td></tr><tr><td class="strong">후학습</td><td class="l"><ul><li>P-TECH 이수증명서 또는 일학습병행 자격증(취득예정증명서), 프로젝트 계획서, 직무기술서 또는 학습계획서</li></ul><p class="note">※ 합격자에게 건강보험 자격득실확인서, 4대 사회보험 가입내역, 표준훈련 근로계약서 등 추가 입학자격 서류를 요구할 수 있음</p></td></tr><tr><td class="strong">산업체</td><td class="l">사업자등록증, 사회보험 가입자 명부, 완납증명서, 산업체 설치·운영계약서, 산업체 부담금 납부 관련 서류</td></tr></tbody></table></div>
 </div></section>
 
 <!-- 9 -->
@@ -575,14 +595,34 @@ ol.n>li::before{content:counter(q);position:absolute;left:0;top:10px;width:22px;
   <ol class="n">
     <li>계약학과 입학 추천서</li>
     <li>개인정보 불일치 사항 확인서</li>
-    <li>인천대학교 계약학과 신·편입학 원서</li>
+    <li>인천대학교 계약학과 편입학 원서</li>
     <li>계약학과 설치·운영 협약서(후학습모델 특약 포함)</li>
     <li>후학습모델 학습·프로젝트 계획서 (필요하면)</li>
     <li>일학습병행 참여 서약서 (<span class="ph">한국공학기술대학교 샘플</span>)</li>
   </ol>
 </div></section>
 
-<footer>국립인천대학교 | 2027학년도 계약학과 신·편입생 모집요강(경력개발고도화 과정) | © 2027 Incheon National University</footer>
+<footer>국립인천대학교 | 2027학년도 계약학과 편입생 모집요강(경력개발고도화 과정) | © 2027 Incheon National University</footer>
+
+<div class="pop-ov" id="surveyPop" role="dialog" aria-modal="true" aria-labelledby="surveyTitle" hidden>
+  <div class="pop">
+    <div class="pop-hd">
+      <div class="lead">설문조사 안내</div>
+      <h3 id="surveyTitle">2027년 경력개발고도화 사업<br/>학습근로자 수요조사</h3>
+    </div>
+    <div class="pop-bd">
+      <p>안녕하세요? 국립인천대학교는 고용노동부·한국산업인력공단의 「경력개발고도화 사업」에 선정되어 2027년 3월 개강 목표로 후학습 과정을 준비하고 있습니다.</p>
+      <p>본 설문은 P-TECH 및 일학습병행 이수자(외부평가 합격자)의 후학습을 위한 기업의 수요와 참여 의향을 파악하기 위한 것입니다.</p>
+      <p>조사 결과는 참여기업 발굴, 학습근로자 모집 및 교육 과정 운영 계획 수립을 위한 기초 자료로 활용됩니다.</p>
+      <div class="due"><b>설문 제출 기간 : 2026년 10월 30일(금) 18:00</b><small>예상 소요 시간 : 약 3분</small></div>
+    </div>
+    <a class="pop-cta" id="surveyLink" href="https://forms.gle/8zpsqNc8YUWgFw7C8" target="_blank" rel="noopener">설문 참여하기</a>
+    <div class="pop-ft">
+      <button type="button" id="surveyHide">오늘 하루 보지 않기</button>
+      <button type="button" id="surveyClose">닫기</button>
+    </div>
+  </div>
+</div>
 <button id="toTop" aria-label="맨 위로"></button>
 
 <script>
@@ -605,5 +645,27 @@ toTop.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
 
 <script>
 document.querySelectorAll('.tw table').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th'),function(x){return x.textContent.trim()});[].forEach.call(t.querySelectorAll('tbody tr'),function(r){[].forEach.call(r.children,function(c,i){c.setAttribute('data-label',h[i]||'')})})});
+</script>
+
+<script>
+(function(){
+  var pop=document.getElementById('surveyPop');
+  if(!pop)return;
+  var KEY='surveyPopHideUntil';
+  // 제출 마감(2026-10-30 18:00 KST) 이후에는 자동으로 표시하지 않음
+  if(Date.now()>=new Date('2026-10-30T18:00:00+09:00').getTime())return;
+  try{var u=parseInt(localStorage.getItem(KEY)||'0',10);if(u&&Date.now()<u)return;}catch(e){}
+  var prev=null;
+  function open(){prev=document.activeElement;pop.hidden=false;document.body.style.overflow='hidden';document.getElementById('surveyLink').focus();}
+  function close(){pop.hidden=true;document.body.style.overflow='';if(prev&&prev.focus)prev.focus();}
+  document.getElementById('surveyClose').addEventListener('click',close);
+  document.getElementById('surveyHide').addEventListener('click',function(){
+    try{var d=new Date();d.setHours(23,59,59,999);localStorage.setItem(KEY,String(d.getTime()));}catch(e){}
+    close();
+  });
+  pop.addEventListener('click',function(e){if(e.target===pop)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!pop.hidden)close();});
+  open();
+})();
 </script>
 </body></html>
