@@ -370,7 +370,28 @@ ul,ol{margin:0;padding:0;list-style:none;}
 .doc-list li small{display:block;color:var(--muted);font-size:.85rem;}
 .req--one{grid-template-columns:1fr;}
 .wrap p,.wrap li,.wrap small,.wrap td,.wrap summary,.wrap .rule span,.wrap .panel__lede,.pop-bd p,.pop-bd .due{text-wrap:balance !important;}
+/* 여백·제목 정리 */
+.facts{gap:12px;}
+.fact{padding:22px 26px 24px;border-radius:22px;}
+.fact b{font-size:1.05rem;font-weight:700;letter-spacing:-.01em;margin-bottom:12px;}
+.fact span{margin-top:0;font-size:.97rem;line-height:1.7;}
+@media(max-width:860px){.fact{padding:20px 18px 22px;}.fact span{font-size:.9rem;}.fact .cg{padding:14px 16px;}}
+.fact .fhead{margin-bottom:14px;}
+.fact .fhead b{margin-bottom:0;}
+.fact .course{margin-top:0;gap:12px;}
+.fact .cg{padding:16px 18px;border-radius:14px;}
+.fact .cg h4{margin-bottom:8px;font-size:.85rem;}
+.fact .cr{padding:4px 0;font-size:.95rem;}
+.sec__sub{margin-top:16px;color:#000;}
+.benefit h3{margin-bottom:16px;}
+.rule b{margin-bottom:4px;}
+.flow__box p{margin-top:6px;}
+.flow__box h3{margin-bottom:2px;}
+.req__card h3{margin-bottom:4px;}
+.req__card ul{margin-top:16px;}
+.door__title{margin-bottom:4px;}
 .dt{white-space:nowrap;}
+@media(min-width:861px){.facts--2{grid-template-columns:1fr 1fr;}}
 .req__card ul.lab li{padding-left:1.7em;}
 .req__card ul.lab li::before{display:none;}
 .req__card ul.lab li b{position:absolute;left:0;top:0;color:var(--brand);}
@@ -419,10 +440,10 @@ ul,ol{margin:0;padding:0;list-style:none;}
     </div>
   </div>
 
-  <div class="facts">
+  <div class="facts facts--2">
     <div class="fact"><b>모집 학과</b><span>AI융합반도체시스템공학과</span></div>
     <div class="fact"><b>모집 과정</b><span>3학년 편입학<br>입학정원 30명</span></div>
-    <div class="fact"><b>전형 방법</b><span>면접 100%<br>수여학위 공학사</span></div>
+    <div class="fact fact--wide"><b>지원자격</b><span>P‑TECH 이수자 또는 일학습병행 자격취득자<br>자세한 내용은 학생 안내 페이지를 참고해 주세요.</span></div>
     <div class="fact fact--wide"><div class="fhead"><b>등록금</b><p class="cnote">산업체가 50% 이상 부담</p></div><div class="course">
       <div class="cg"><h4>등록금액</h4><div class="cr"><i>산업체 + 학생</i><i class="cc">3,124,000원</i></div></div>
       <div class="cg"><h4>산업체 부담금</h4><div class="cr"><i>50% 이상</i><i class="cc">1,562,000원</i></div></div>
@@ -455,15 +476,6 @@ ul,ol{margin:0;padding:0;list-style:none;}
   </nav>
 
   <div class="wrap">
-    <section class="check" aria-label="지원자격 확인">
-      <div class="face" aria-hidden="true"></div>
-      <div>
-        <h2>원서접수 전에 지원자격부터 확인해 보세요</h2>
-        <p>재직 중인 산업체의 계약서 제출이 먼저 필요하고, 산업체 검증을 마친 분만 접수할 수 있습니다.</p>
-      </div>
-      <button class="btn btn--solid" type="button" data-scroll="s-elig">지원자격 확인하기</button>
-    </section>
-
     <section class="panel s-hero">
       <h1>일하면서 배우고, <span class="nb">학위로 이어지는 3학년 편입</span></h1>
       <p class="panel__lede">AI융합반도체시스템공학과 편입생을 모집합니다.<br>재직 중인 직원이 재교육을 받고 정규 학위를 취득할 수 있습니다.</p>
